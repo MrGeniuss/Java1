@@ -7,6 +7,13 @@ public class Cliente {
     private String email;
     private int numero;
 
+    public Cliente(String nome, int numero, String email, LocalDate dataDeNascimento){
+        this.nome = nome;
+        this.numero = numero;
+        this.email = email;
+        this.dataDeNascimento = dataDeNascimento;
+    }
+
     // Getters
     public String getNome() {
         return this.nome;
@@ -21,13 +28,11 @@ public class Cliente {
         return this.numero;
     }
     // Setters
-    public void setTelefone(int numero){
+    public void setNumero(int numero){
         this.numero = numero;
     }
     public void setEmail(String email){
         this.email = email;
-    }
-    public void setNumero(int i) {
     }
     
 }

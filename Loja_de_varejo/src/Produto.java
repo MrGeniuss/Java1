@@ -2,8 +2,15 @@ public class Produto {
 
     private String nome;
     private String marca;
-    private Double preço;
+    private Double preco;
     private Double quantidade;
+
+    public Produto(String nome, String marca, Double preco, Double quantidade){
+        this.nome = nome;
+        this.marca = marca;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
 
     //Getters
     public String getNome() {
@@ -12,15 +19,15 @@ public class Produto {
     public String getMarca() {
         return this.marca;
     }
-    public Double getPreço() {
-        return this.preço;
+    public Double getPreco() {
+        return this.preco;
     }
     public Double getQuantidade() {
         return this.quantidade;
     }
     //Setters
-    public void setPreço(Double preço){
-        this.preço = preço;
+    public void setPreco(Double preco){
+        this.preco = preco;
     }
     public void setQuantidade(Double quantidade){
         this.quantidade = quantidade;
